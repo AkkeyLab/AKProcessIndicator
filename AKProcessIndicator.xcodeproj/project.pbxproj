@@ -15,6 +15,9 @@
 		F4A1A67324709B41006DD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A67124709B40006DD470 /* LaunchScreen.storyboard */; };
 		F4A1A67E24709B41006DD470 /* AKProcessIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A67D24709B41006DD470 /* AKProcessIndicatorTests.swift */; };
 		F4A1A68924709B41006DD470 /* AKProcessIndicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A68824709B41006DD470 /* AKProcessIndicatorUITests.swift */; };
+		F4A1A6A424709EE4006DD470 /* AKProcessIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6A224709EE4006DD470 /* AKProcessIndicator.swift */; };
+		F4A1A6A524709EE4006DD470 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6A324709EE4006DD470 /* AnimationLayer.swift */; };
+		F4A1A6A724709EED006DD470 /* CAGradientLayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6A624709EED006DD470 /* CAGradientLayer+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F4A1A68424709B41006DD470 /* AKProcessIndicatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKProcessIndicatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A1A68824709B41006DD470 /* AKProcessIndicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKProcessIndicatorUITests.swift; sourceTree = "<group>"; };
 		F4A1A68A24709B41006DD470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A1A6A224709EE4006DD470 /* AKProcessIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKProcessIndicator.swift; sourceTree = "<group>"; };
+		F4A1A6A324709EE4006DD470 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
+		F4A1A6A624709EED006DD470 /* CAGradientLayer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		F4A1A65A24709B3F006DD470 = {
 			isa = PBXGroup;
 			children = (
+				F4A1A6A024709ECB006DD470 /* Source */,
 				F4A1A66524709B3F006DD470 /* AKProcessIndicator */,
 				F4A1A67C24709B41006DD470 /* AKProcessIndicatorTests */,
 				F4A1A68724709B41006DD470 /* AKProcessIndicatorUITests */,
@@ -134,6 +141,24 @@
 				F4A1A68A24709B41006DD470 /* Info.plist */,
 			);
 			path = AKProcessIndicatorUITests;
+			sourceTree = "<group>";
+		};
+		F4A1A6A024709ECB006DD470 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4A1A6A224709EE4006DD470 /* AKProcessIndicator.swift */,
+				F4A1A6A324709EE4006DD470 /* AnimationLayer.swift */,
+				F4A1A6A124709ED9006DD470 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F4A1A6A124709ED9006DD470 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4A1A6A624709EED006DD470 /* CAGradientLayer+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +295,9 @@
 				F4A1A66724709B3F006DD470 /* AppDelegate.swift in Sources */,
 				F4A1A66924709B3F006DD470 /* SceneDelegate.swift in Sources */,
 				F4A1A66B24709B3F006DD470 /* ContentView.swift in Sources */,
+				F4A1A6A524709EE4006DD470 /* AnimationLayer.swift in Sources */,
+				F4A1A6A424709EE4006DD470 /* AKProcessIndicator.swift in Sources */,
+				F4A1A6A724709EED006DD470 /* CAGradientLayer+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
