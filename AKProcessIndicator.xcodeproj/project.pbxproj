@@ -12,6 +12,12 @@
 		F4A1A6D02470A884006DD470 /* AKProcessIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6CE2470A883006DD470 /* AKProcessIndicator.swift */; };
 		F4A1A6D12470A884006DD470 /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6CF2470A884006DD470 /* AnimationLayer.swift */; };
 		F4A1A6D32470A88C006DD470 /* CAGradientLayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6D22470A88C006DD470 /* CAGradientLayer+.swift */; };
+		F4A1A6DB2470AB3D006DD470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6DA2470AB3D006DD470 /* AppDelegate.swift */; };
+		F4A1A6DD2470AB3D006DD470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6DC2470AB3D006DD470 /* SceneDelegate.swift */; };
+		F4A1A6DF2470AB3D006DD470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6DE2470AB3D006DD470 /* ContentView.swift */; };
+		F4A1A6E12470AB3E006DD470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E02470AB3E006DD470 /* Assets.xcassets */; };
+		F4A1A6E42470AB3E006DD470 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */; };
+		F4A1A6E72470AB3E006DD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E52470AB3E006DD470 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,14 @@
 		F4A1A6CE2470A883006DD470 /* AKProcessIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKProcessIndicator.swift; sourceTree = "<group>"; };
 		F4A1A6CF2470A884006DD470 /* AnimationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
 		F4A1A6D22470A88C006DD470 /* CAGradientLayer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+.swift"; sourceTree = "<group>"; };
+		F4A1A6D82470AB3D006DD470 /* AKProcessIndicatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKProcessIndicatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A1A6DA2470AB3D006DD470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4A1A6DC2470AB3D006DD470 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4A1A6DE2470AB3D006DD470 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4A1A6E02470AB3E006DD470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4A1A6E62470AB3E006DD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4A1A6E82470AB3E006DD470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A1A6D52470AB3D006DD470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +81,7 @@
 				F4A1A6CC2470A834006DD470 /* Source */,
 				F4A1A6B42470A5F5006DD470 /* AKProcessIndicator */,
 				F4A1A6BF2470A5F5006DD470 /* AKProcessIndicatorTests */,
+				F4A1A6D92470AB3D006DD470 /* AKProcessIndicatorExample */,
 				F4A1A6B32470A5F5006DD470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +91,7 @@
 			children = (
 				F4A1A6B22470A5F5006DD470 /* AKProcessIndicator.framework */,
 				F4A1A6BB2470A5F5006DD470 /* AKProcessIndicatorTests.xctest */,
+				F4A1A6D82470AB3D006DD470 /* AKProcessIndicatorExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +129,28 @@
 				F4A1A6D22470A88C006DD470 /* CAGradientLayer+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4A1A6D92470AB3D006DD470 /* AKProcessIndicatorExample */ = {
+			isa = PBXGroup;
+			children = (
+				F4A1A6DA2470AB3D006DD470 /* AppDelegate.swift */,
+				F4A1A6DC2470AB3D006DD470 /* SceneDelegate.swift */,
+				F4A1A6DE2470AB3D006DD470 /* ContentView.swift */,
+				F4A1A6E02470AB3E006DD470 /* Assets.xcassets */,
+				F4A1A6E52470AB3E006DD470 /* LaunchScreen.storyboard */,
+				F4A1A6E82470AB3E006DD470 /* Info.plist */,
+				F4A1A6E22470AB3E006DD470 /* Preview Content */,
+			);
+			path = AKProcessIndicatorExample;
+			sourceTree = "<group>";
+		};
+		F4A1A6E22470AB3E006DD470 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +202,23 @@
 			productReference = F4A1A6BB2470A5F5006DD470 /* AKProcessIndicatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F4A1A6D72470AB3D006DD470 /* AKProcessIndicatorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A1A6EB2470AB3E006DD470 /* Build configuration list for PBXNativeTarget "AKProcessIndicatorExample" */;
+			buildPhases = (
+				F4A1A6D42470AB3D006DD470 /* Sources */,
+				F4A1A6D52470AB3D006DD470 /* Frameworks */,
+				F4A1A6D62470AB3D006DD470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKProcessIndicatorExample;
+			productName = AKProcessIndicatorExample;
+			productReference = F4A1A6D82470AB3D006DD470 /* AKProcessIndicatorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +234,9 @@
 						LastSwiftMigration = 1140;
 					};
 					F4A1A6BA2470A5F5006DD470 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					F4A1A6D72470AB3D006DD470 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -191,6 +256,7 @@
 			targets = (
 				F4A1A6B12470A5F5006DD470 /* AKProcessIndicator */,
 				F4A1A6BA2470A5F5006DD470 /* AKProcessIndicatorTests */,
+				F4A1A6D72470AB3D006DD470 /* AKProcessIndicatorExample */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +273,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A1A6D62470AB3D006DD470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A1A6E72470AB3E006DD470 /* LaunchScreen.storyboard in Resources */,
+				F4A1A6E42470AB3E006DD470 /* Preview Assets.xcassets in Resources */,
+				F4A1A6E12470AB3E006DD470 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +307,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4A1A6D42470AB3D006DD470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A1A6DB2470AB3D006DD470 /* AppDelegate.swift in Sources */,
+				F4A1A6DD2470AB3D006DD470 /* SceneDelegate.swift in Sources */,
+				F4A1A6DF2470AB3D006DD470 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +326,17 @@
 			targetProxy = F4A1A6BD2470A5F5006DD470 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4A1A6E52470AB3E006DD470 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A1A6E62470AB3E006DD470 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4A1A6C42470A5F6006DD470 /* Debug */ = {
@@ -453,6 +550,50 @@
 			};
 			name = Release;
 		};
+		F4A1A6E92470AB3E006DD470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_ASSET_PATHS = "\"AKProcessIndicatorExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AKProcessIndicatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.lib.AKProcessIndicatorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F4A1A6EA2470AB3E006DD470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_ASSET_PATHS = "\"AKProcessIndicatorExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AKProcessIndicatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.lib.AKProcessIndicatorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -479,6 +620,15 @@
 			buildConfigurations = (
 				F4A1A6CA2470A5F6006DD470 /* Debug */,
 				F4A1A6CB2470A5F6006DD470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A1A6EB2470AB3E006DD470 /* Build configuration list for PBXNativeTarget "AKProcessIndicatorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A1A6E92470AB3E006DD470 /* Debug */,
+				F4A1A6EA2470AB3E006DD470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
