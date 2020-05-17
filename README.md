@@ -10,7 +10,7 @@ It provides a Network Indicator for device that have a Safe Area.
 This library was created by inheriting the wonderful animation of [FTLinearActivityIndicator](https://github.com/futuretap/FTLinearActivityIndicator). Since it does not use deprecated `isNetworkActivityIndicatorVisible`, it can be used with confidence even in the latest environment.
 
 <div align="center">
-    <img src="./sample.gif?raw=true"/>
+    <img src="https://github.com/AkkeyLab/AKProcessIndicator/blob/master/sample.gif?raw=true"/>
 </div>
 
 # Installation
