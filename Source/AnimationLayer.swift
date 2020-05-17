@@ -19,8 +19,8 @@ final class AnimationLayer: CAGradientLayer {
         static let animatingDuration: CFTimeInterval = 1.5
     }
 
+    internal let animation = CABasicAnimation(keyPath: "position.x")
     private var direction: Direction?
-    private let animation = CABasicAnimation(keyPath: "position.x")
 
     convenience init(_ direction: Direction) {
         self.init()
