@@ -9,8 +9,8 @@
 import XCTest
 @testable import AKProcessIndicator
 
+// swiftlint:disable force_cast
 final class AKProcessIndicatorTests: XCTestCase {
-
     func testGradientsRight() {
         let layer = CAGradientLayer()
         layer.applyGradients(.right)
@@ -115,3 +115,4 @@ final class AKProcessIndicatorTests: XCTestCase {
         XCTAssertNil(layer.animationKeys())
     }
 }
+// swiftlint:enable force_cast
