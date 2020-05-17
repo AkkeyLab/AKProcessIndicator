@@ -12,6 +12,7 @@ before_install:
 #   - carthage update --platform iOS
 
 script:
+    - set -o pipefail
     - xcodebuild -scheme AKProcessIndicator -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 11 Pro' -configuration Debug test | xcpretty -c
     - swiftlint
 
