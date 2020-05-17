@@ -11,7 +11,8 @@ import UIKit
 public extension UIApplication {
     /**
      Call this after creating a UIWindow with AppDelegate or SceneDelegate and defining it in the system.
-     If this is executed on a device other than iPhoneX / iPhoneXS / iPhoneXS Max / iPhoneXR / iPhone11 Pro / iPhone11 Pro Max / iPhone11,
+     If this is executed on a device other than
+     iPhoneX / iPhoneXS / iPhoneXS Max / iPhoneXR / iPhone11 Pro / iPhone11 Pro Max / iPhone11,
      the processing in the method will be skipped.
     */
     func setupProcessIndicatorIfNeeded(substitute: (() -> Void) = {}) {
