@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AKProcessIndicator: UIView {
+final class AKProcessIndicator: UIView {
     private enum Const {
         static let animatingDuration: TimeInterval = 0.5
     }
@@ -16,7 +16,7 @@ public class AKProcessIndicator: UIView {
     private let rightLayer = AnimationLayer(.right)
     private let leftLayer = AnimationLayer(.left)
 
-    override public func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
 
         clipsToBounds = true
@@ -32,30 +32,26 @@ public class AKProcessIndicator: UIView {
         layer.addSublayer(leftLayer)
     }
 
-    public func startAnimating() {
-        guard !isAnimating else {
-            stopAnimating { [weak self] in
-                self?.startAnimating()
+    private func startAnimating() {
+        guard !isAnimating else { return }
+
+        UIView.animate(
+            withDuration: Const.animatingDuration,
+            animations: { [weak self] in
+                self?.alpha = 1
             }
-            return
-        }
-
-        UIView.animate(withDuration: Const.animatingDuration) { [weak self] in
-            self?.isHidden = false
-        }
-
+        )
         rightLayer.addAnimation()
         leftLayer.addAnimation()
-
         setNeedsLayout()
         layoutIfNeeded()
     }
 
-    public func stopAnimating(completion: (() -> Void)? = nil) {
+    private func stopAnimating(completion: (() -> Void)? = nil) {
         UIView.animate(
             withDuration: Const.animatingDuration,
             animations: { [weak self] in
-                self?.isHidden = true
+                self?.alpha = .zero
             },
             completion: { [weak self] _ in
                 self?.rightLayer.removeAllAnimations()
@@ -67,12 +63,17 @@ public class AKProcessIndicator: UIView {
         )
     }
 
-    public var isAnimating: Bool {
-        rightLayer.animationKeys()?.isEmpty ?? true
-            || leftLayer.animationKeys()?.isEmpty ?? true
+    internal var isAnimating: Bool {
+        set {
+            newValue ? startAnimating() : stopAnimating()
+        }
+        get {
+            !(rightLayer.animationKeys()?.isEmpty ?? true)
+                || !(leftLayer.animationKeys()?.isEmpty ?? true)
+        }
     }
 
-    override public func tintColorDidChange() {
+    override func tintColorDidChange() {
         super.tintColorDidChange()
         rightLayer.updateColor(tintColor)
         leftLayer.updateColor(tintColor)

@@ -36,15 +36,13 @@ final class AnimationLayer: CAGradientLayer {
         animation.timeOffset = direction == .right ? .zero : Const.animatingDuration * 0.5
         animation.repeatCount = .infinity
         animation.isRemovedOnCompletion = false
-        add(animation, forKey: nil)
+        add(animation, forKey: "animation-layer")
     }
 
     internal func updateLayer() {
-        debugPrint(bounds.size.width)
-        if let direction = direction {
-            applyGradients(direction)
-            applyRoundCorner()
-        }
+        guard let direction = direction else { return }
+        applyGradients(direction)
+        applyRoundCorner()
     }
 
     internal func updateColor(_ color: UIColor) {

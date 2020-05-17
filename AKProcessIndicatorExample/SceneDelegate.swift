@@ -6,12 +6,14 @@
 //  Copyright © 2020 AKIO. All rights reserved.
 //
 
+import AKProcessIndicator
 import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var timer: Timer?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -28,6 +30,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
+        }
+
+        UIApplication.shared.setupProcessIndicatorIfNeeded()
+        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+            UIApplication.shared.isLoding.toggle()
         }
     }
 

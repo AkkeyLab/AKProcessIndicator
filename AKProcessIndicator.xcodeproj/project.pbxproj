@@ -18,6 +18,8 @@
 		F4A1A6E12470AB3E006DD470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E02470AB3E006DD470 /* Assets.xcassets */; };
 		F4A1A6E42470AB3E006DD470 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */; };
 		F4A1A6E72470AB3E006DD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E52470AB3E006DD470 /* LaunchScreen.storyboard */; };
+		F4A1A6ED2470AD07006DD470 /* AKProcessIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A1A6B22470A5F5006DD470 /* AKProcessIndicator.framework */; };
+		F4A1A6EF2470AD58006DD470 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6EE2470AD58006DD470 /* UIApplication+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4A1A6E62470AB3E006DD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A1A6E82470AB3E006DD470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A1A6EE2470AD58006DD470 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A1A6ED2470AD07006DD470 /* AKProcessIndicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				F4A1A6BF2470A5F5006DD470 /* AKProcessIndicatorTests */,
 				F4A1A6D92470AB3D006DD470 /* AKProcessIndicatorExample */,
 				F4A1A6B32470A5F5006DD470 /* Products */,
+				F4A1A6EC2470AD07006DD470 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F4A1A6D22470A88C006DD470 /* CAGradientLayer+.swift */,
+				F4A1A6EE2470AD58006DD470 /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +157,13 @@
 				F4A1A6E32470AB3E006DD470 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4A1A6EC2470AD07006DD470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A1A6EF2470AD58006DD470 /* UIApplication+.swift in Sources */,
 				F4A1A6D12470A884006DD470 /* AnimationLayer.swift in Sources */,
 				F4A1A6D02470A884006DD470 /* AKProcessIndicator.swift in Sources */,
 				F4A1A6D32470A88C006DD470 /* CAGradientLayer+.swift in Sources */,
@@ -471,7 +485,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AKProcessIndicator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +513,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AKProcessIndicator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
