@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'AKProcessIndicator'
-    s.version          = '0.0.1'
+    s.version          = '0.0.3'
     s.summary          = '⏳ It provides a Network Indicator for device that have a Safe Area'
 
     s.homepage         = 'https://github.com/AkkeyLab/AKProcessIndicator'
