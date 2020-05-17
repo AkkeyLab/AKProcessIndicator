@@ -37,13 +37,6 @@
 			remoteGlobalIDString = F4A1A6B12470A5F5006DD470;
 			remoteInfo = AKProcessIndicator;
 		};
-		F4A1A6F424710D22006DD470 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4A1A6A92470A5F5006DD470 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4A1A6D72470AB3D006DD470;
-			remoteInfo = AKProcessIndicatorExample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -224,7 +217,6 @@
 			);
 			dependencies = (
 				F4A1A6BE2470A5F5006DD470 /* PBXTargetDependency */,
-				F4A1A6F524710D22006DD470 /* PBXTargetDependency */,
 			);
 			name = AKProcessIndicatorTests;
 			productName = AKProcessIndicatorTests;
@@ -266,7 +258,6 @@
 					};
 					F4A1A6BA2470A5F5006DD470 = {
 						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = F4A1A6D72470AB3D006DD470;
 					};
 					F4A1A6D72470AB3D006DD470 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -401,11 +392,6 @@
 			isa = PBXTargetDependency;
 			target = F4A1A6B12470A5F5006DD470 /* AKProcessIndicator */;
 			targetProxy = F4A1A6F02470C37D006DD470 /* PBXContainerItemProxy */;
-		};
-		F4A1A6F524710D22006DD470 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F4A1A6D72470AB3D006DD470 /* AKProcessIndicatorExample */;
-			targetProxy = F4A1A6F424710D22006DD470 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -611,7 +597,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKProcessIndicatorExample.app/AKProcessIndicatorExample";
 			};
 			name = Debug;
 		};
@@ -630,7 +615,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKProcessIndicatorExample.app/AKProcessIndicatorExample";
 			};
 			name = Release;
 		};
