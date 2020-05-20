@@ -19,14 +19,7 @@ public extension UIApplication {
         guard let window = targetWindow, isSafeAreaPhoneDevice else {
             return substitute()
         }
-        let indicator = AKProcessIndicator(frame: CGRect(
-            x: window.frame.width - (Const.rightMargin + Const.indicatorWidth),
-            y: Const.topMargin,
-            width: Const.indicatorWidth,
-            height: Const.indicatorHeight
-        ))
-        indicator.isUserInteractionEnabled = false
-        window.addSubview(indicator)
+        window.addSubview(AKProcessIndicatorManager.shared.indicator)
     }
 
     /**
@@ -35,23 +28,16 @@ public extension UIApplication {
     */
     var isLoding: Bool {
         set {
-            processIndicator?.isAnimating = newValue
-            processIndicator?.tintColor = statusBarReverseColor
+            processIndicator.isAnimating = newValue
+            processIndicator.tintColor = statusBarReverseColor
         }
         get {
-            processIndicator?.isAnimating ?? false
+            processIndicator.isAnimating
         }
     }
 }
 
 private extension UIApplication {
-    private enum Const {
-        static let indicatorWidth: CGFloat = 44
-        static let indicatorHeight: CGFloat = 4
-        static let rightMargin: CGFloat = 30
-        static let topMargin: CGFloat = 6
-    }
-
     private var targetWindow: UIWindow? {
         windows.filter { $0.isKeyWindow }.first
     }
@@ -59,8 +45,8 @@ private extension UIApplication {
     /**
      This will return the Process Indicator that was `addSubview` during setup.
     */
-    private var processIndicator: AKProcessIndicator? {
-        targetWindow?.subviews.compactMap { $0 as? AKProcessIndicator }.first
+    private var processIndicator: AKProcessIndicator {
+        AKProcessIndicatorManager.shared.indicator
     }
 
     /**

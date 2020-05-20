@@ -20,6 +20,7 @@
 		F4A1A6E72470AB3E006DD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A1A6E52470AB3E006DD470 /* LaunchScreen.storyboard */; };
 		F4A1A6ED2470AD07006DD470 /* AKProcessIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A1A6B22470A5F5006DD470 /* AKProcessIndicator.framework */; };
 		F4A1A6EF2470AD58006DD470 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1A6EE2470AD58006DD470 /* UIApplication+.swift */; };
+		F4F439FC247548750022874D /* AKProcessIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F439FB247548750022874D /* AKProcessIndicatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F4A1A6E62470AB3E006DD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A1A6E82470AB3E006DD470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A1A6EE2470AD58006DD470 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		F4F439FB247548750022874D /* AKProcessIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKProcessIndicatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				F4A1A6CD2470A83F006DD470 /* Extensions */,
 				F4A1A6CE2470A883006DD470 /* AKProcessIndicator.swift */,
 				F4A1A6CF2470A884006DD470 /* AnimationLayer.swift */,
+				F4F439FB247548750022874D /* AKProcessIndicatorManager.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			files = (
 				F4A1A6EF2470AD58006DD470 /* UIApplication+.swift in Sources */,
 				F4A1A6D12470A884006DD470 /* AnimationLayer.swift in Sources */,
+				F4F439FC247548750022874D /* AKProcessIndicatorManager.swift in Sources */,
 				F4A1A6D02470A884006DD470 /* AKProcessIndicator.swift in Sources */,
 				F4A1A6D32470A88C006DD470 /* CAGradientLayer+.swift in Sources */,
 			);
