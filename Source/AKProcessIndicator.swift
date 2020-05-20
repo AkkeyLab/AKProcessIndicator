@@ -34,17 +34,18 @@ final class AKProcessIndicator: UIView {
 
     private func startAnimating() {
         guard !isAnimating else { return }
-
+        DispatchQueue.main.async { [weak self] in
+            self?.rightLayer.addAnimation()
+            self?.leftLayer.addAnimation()
+            self?.setNeedsLayout()
+            self?.layoutIfNeeded()
+        }
         UIView.animate(
             withDuration: Const.animatingDuration,
             animations: { [weak self] in
                 self?.alpha = 1
             }
         )
-        rightLayer.addAnimation()
-        leftLayer.addAnimation()
-        setNeedsLayout()
-        layoutIfNeeded()
     }
 
     private func stopAnimating(completion: (() -> Void)? = nil) {
