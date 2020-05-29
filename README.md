@@ -52,7 +52,7 @@ UIApplication.shared.setupProcessIndicatorIfNeeded()
 ```
 After that, it is possible to switch the display / non-display of Process Indicator by switching the flag.
 ```swift
-UIApplication.shared.isLoding = true
+UIApplication.shared.isLoading = true
 ```
 
 # Requirements
