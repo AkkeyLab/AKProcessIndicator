@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         UIApplication.shared.setupProcessIndicatorIfNeeded()
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
-            UIApplication.shared.isLoding.toggle()
+            UIApplication.shared.isLoading.toggle()
         }
     }
 }

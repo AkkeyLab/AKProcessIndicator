@@ -26,7 +26,7 @@ public extension UIApplication {
      it is possible to switch the display / non-display of Process Indicator by switching the flag.
      If the setup is not completed or is not done properly, the SET method will not work.
     */
-    var isLoding: Bool {
+    var isLoading: Bool {
         set {
             processIndicator.isAnimating = newValue
             processIndicator.tintColor = statusBarReverseColor
